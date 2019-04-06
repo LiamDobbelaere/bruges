@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register **/*.spec.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/TomDobbelaere/bruges#readme",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
     "tsc-watch": "^2.1.2",
     "typescript": "^3.4.2"
   },
