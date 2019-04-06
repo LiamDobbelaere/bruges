@@ -16,5 +16,5 @@ export class Bruges {
 export interface BrugesConfig {
   migrator: MigratorInterface;
 }
-
+//test
 export * from "./migration/index";
